@@ -9,7 +9,6 @@ References used for the mainly mechanics of Tetris
 - [Mister Taft Creates](https://www.youtube.com/watch?v=KRm2dlcp7Nk&t=2709s&ab_channel=MisterTaftCreates)
 
 ## Assets
-- Softbody effect made by [NVIDIA FleX for Unity](https://assetstore.unity.com/packages/tools/physics/nvidia-flex-for-unity-1-0-beta-120425)
 - Voxel Low Poly Forniture by [VIRTI](https://assetstore.unity.com/packages/3d/props/furniture/voxel-furniture-free-170365)
 - UI Packs and Fonts by [Kenney Assets](https://www.kenney.nl/assets?q=ui)
 - Sound Effects by...
