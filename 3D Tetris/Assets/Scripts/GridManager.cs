@@ -10,6 +10,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] GameObject[,] grid;
     [SerializeField] PieceSpawner pieceSpawner;
     [SerializeField] ScoreManager scoreManager;
+    [SerializeField] GameManager gameManger;
 
     //Gizmos para Debug
     void OnDrawGizmos()
@@ -22,11 +23,6 @@ public class GridManager : MonoBehaviour
     {
         //Inicia a matriz da grid conforme as dimensões passadas
         grid = new GameObject[width, height];
-    }
-
-    void Update()
-    {
-        
     }
 
     //GERENCIAMENTO DAS PEÇAS
@@ -87,6 +83,9 @@ public class GridManager : MonoBehaviour
         {
             pieceSpawner.SpawnPiece();
         }
+
+        //Verifica se houve o GameOver ao aterrisar uma peça
+        CheckGameOver();
     }
 
     //Guarda os blocos da peça no grid
@@ -164,6 +163,19 @@ public class GridManager : MonoBehaviour
         for(int i = row; i < height; i++)
         {
             DecreaseRow(i);
+        }
+    }
+
+    //Verifica se houve o GameOver
+    void CheckGameOver()
+    {
+        for(int i = 0; i < width; i++)
+        {
+            //Se há blocos na última fileira, chama o GameOver
+            if(grid[i, 16] != null)
+            {
+                gameManger.GameOver();
+            }
         }
     }
 }

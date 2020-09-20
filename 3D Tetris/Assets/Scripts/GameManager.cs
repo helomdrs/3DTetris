@@ -9,15 +9,26 @@ public class GameManager : MonoBehaviour
     //Objeto de texto de pausar/despausar o jogo
     public Text pauseTxt;
 
+    public GameObject gameOverMessage;
+
     void Start()
     {
-        //Certifica-se de que o jogo esteja rodando no início da cena
-        Time.timeScale = 1f;
+        InitializeGame();
     }
 
     void Update()
     {
         
+    }
+
+    void InitializeGame()
+    {
+        //Certifica-se de que o jogo esteja rodando no início da cena
+        Time.timeScale = 1f;
+
+        //Inicializa a HUD da forma adequada
+        gameOverMessage.SetActive(false);
+        pauseTxt.gameObject.SetActive(true);
     }
 
     //Faz a variação entre pausar e despausar o jogo
@@ -32,6 +43,20 @@ public class GameManager : MonoBehaviour
             pauseTxt.text = "pause";
             Time.timeScale = 1f;
         }
+    }
+
+    //Comportamento da HUD durante o game over
+    public void GameOver()
+    {
+        gameOverMessage.SetActive(true);
+        pauseTxt.gameObject.SetActive(false);
+        Time.timeScale = 0f;
+    }
+
+    //Restarta o jogo carregando a cena de game
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 
     //Sai para o Menu Inicial
