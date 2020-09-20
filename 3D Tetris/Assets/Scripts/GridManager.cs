@@ -9,6 +9,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] int height = 20;
     [SerializeField] GameObject[,] grid;
     [SerializeField] PieceSpawner pieceSpawner;
+    [SerializeField] ScoreManager scoreManager;
 
     //Gizmos para Debug
     void OnDrawGizmos()
@@ -133,6 +134,9 @@ public class GridManager : MonoBehaviour
                 DeleteRow(i);
                 DecreaseRowsAbove(i + 1);
                 i--;
+
+                //Adiciona o score a cada linha pronta
+                scoreManager.AddScore();
             }
         }
     }
