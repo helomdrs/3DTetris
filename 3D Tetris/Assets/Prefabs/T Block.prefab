@@ -371,9 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c50a82d564d6d46be4c1275097276c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallVelocity: 0.5
   blocks:
   - {fileID: 3591862053561718642}
   - {fileID: 3591862053296320345}
   - {fileID: 3591862052355709511}
   - {fileID: 3591862053445852836}
-  fallVelocity: 0.5

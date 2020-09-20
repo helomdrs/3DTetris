@@ -46,6 +46,7 @@ public class Piece : MonoBehaviour
                 if (fallCounter <= 0f)
                 {
                     MovePiece(Vector2.down);
+
                     if (!IsValidPosition())
                     {
                         MovePiece(Vector2.up);
@@ -61,7 +62,7 @@ public class Piece : MonoBehaviour
 
                 //Checa os inputs de movimentação do usuário
                 CheckPlayerInput();
-            } 
+            }
         }
     }
 
