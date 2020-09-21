@@ -9,7 +9,7 @@ References used for the mainly mechanics of Tetris
 - [Mister Taft Creates](https://www.youtube.com/watch?v=KRm2dlcp7Nk&t=2709s&ab_channel=MisterTaftCreates)
 
 ## Assets
-- Voxel Low Poly Forniture by [VIRTI](https://assetstore.unity.com/packages/3d/props/furniture/voxel-furniture-free-170365)
-- UI Packs and Fonts by [Kenney Assets](https://www.kenney.nl/assets?q=ui)
+- CoffeeShop Starter Pack by [Puzzled Wizard](https://assetstore.unity.com/packages/3d/props/coffeeshop-starter-pack-160914)
+- Font by [Kenney Assets](https://www.kenney.nl/assets/kenney-fonts)
 - Sound Effects by...
 

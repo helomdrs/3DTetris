@@ -12,13 +12,6 @@ public class GridManager : MonoBehaviour
     [SerializeField] ScoreManager scoreManager;
     [SerializeField] GameManager gameManger;
 
-    //Gizmos para Debug
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position, new Vector3(width, height, 2));
-    }
-
     void Start()
     {
         //Inicia a matriz da grid conforme as dimensões passadas
