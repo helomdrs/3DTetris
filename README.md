@@ -11,6 +11,21 @@ References used for the mainly mechanics of Tetris
 ## Assets
 - CoffeeShop Starter Pack by [Puzzled Wizard](https://assetstore.unity.com/packages/3d/props/coffeeshop-starter-pack-160914)
 - Font by [Kenney Assets](https://www.kenney.nl/assets/kenney-fonts)
-- Soundtrack by [Bogozi / CC BY-SA] (https://commons.wikimedia.org/wiki/File:Tetris_theme.ogg)
-- Sound effects by Mrthenoronha [1](https://freesound.org/people/Mrthenoronha/sounds/399904/) [2](https://freesound.org/people/Mrthenoronha/sounds/518307/) and [SomeGuy22](https://freesound.org/people/SomeGuy22/sounds/431328/) 
+- Soundtrack by [Bogozi / CC BY-SA](https://commons.wikimedia.org/wiki/File:Tetris_theme.ogg)
+- Sound effects by Mrthenoronha [1](https://freesound.org/people/Mrthenoronha/sounds/399904/) [2](https://freesound.org/people/Mrthenoronha/sounds/518307/) and [SomeGuy22](https://freesound.org/people/SomeGuy22/sounds/431328/)
 
+## Final considerations
+A 3D Tetris was way harder than I expected, I had to review a lot about grids and tried out Shader programming a little bit. The mainly Tetris mechanic is based on a grid with two dimensions that will constantly verify the position of all cubes of a Tetris Piece, witch you ensure that the shape doesn't matter for the code. Although I didn't get the Jelly effect I wanted (from NVIDIA FleX Soft Body) and couldn't construct illumination right, I'm pretty happy with the outcome. 
+
+## Next steps
+- Build illumination
+- Develop a good Jelly effect on the cubes
+- Fix a little bug from the piece movement
+- Make the piece speed editable by the user
+- Enable optios like:
+	- Sound On/Off;
+	- Show indicator of the piece's final position; 
+	- Bonus per row On/Off;
+	- Levels of difficulty; 
+
+### Thank you for the opportunity Kokku!
