@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    SoundsManager soundsManager;
+
     //Objeto de texto de pausar/despausar o jogo
     public Text pauseTxt;
 
@@ -14,11 +16,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         InitializeGame();
-    }
-
-    void Update()
-    {
-        
+        soundsManager = GetComponent<SoundsManager>();
     }
 
     void InitializeGame()
@@ -50,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverMessage.SetActive(true);
         pauseTxt.gameObject.SetActive(false);
+        soundsManager.PlayGameOver();
         Time.timeScale = 0f;
     }
 
@@ -62,7 +61,6 @@ public class GameManager : MonoBehaviour
     //Sai para o Menu Inicial
     public void QuitGame()
     {
-        Debug.Log("Quit Game!");
-        //SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 }

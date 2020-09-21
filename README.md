@@ -11,5 +11,6 @@ References used for the mainly mechanics of Tetris
 ## Assets
 - CoffeeShop Starter Pack by [Puzzled Wizard](https://assetstore.unity.com/packages/3d/props/coffeeshop-starter-pack-160914)
 - Font by [Kenney Assets](https://www.kenney.nl/assets/kenney-fonts)
-- Sound Effects by...
+- Soundtrack by [Bogozi / CC BY-SA] (https://commons.wikimedia.org/wiki/File:Tetris_theme.ogg)
+- Sound effects by Mrthenoronha [1](https://freesound.org/people/Mrthenoronha/sounds/399904/) [2](https://freesound.org/people/Mrthenoronha/sounds/518307/) and [SomeGuy22](https://freesound.org/people/SomeGuy22/sounds/431328/) 
 

@@ -11,6 +11,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] PieceSpawner pieceSpawner;
     [SerializeField] ScoreManager scoreManager;
     [SerializeField] GameManager gameManger;
+    [SerializeField] SoundsManager soundsManager;
 
     void Start()
     {
@@ -62,6 +63,8 @@ public class GridManager : MonoBehaviour
     //Aterrisa a peça 
     public void LandPiece(Piece piece)
     {
+        soundsManager.PlayLandPiece();
+        
         //Guarda definitivamente cada bloco da peça no grid
         for(int i = 0; i < piece.blocks.Length; i++)
         {

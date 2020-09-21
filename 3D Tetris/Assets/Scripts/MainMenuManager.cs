@@ -6,8 +6,21 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject menuPanel, creditsPanel;
+    public AudioClip startGame;
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void StartGame()
+    {
+        audioSource.PlayOneShot(startGame);
+        Invoke("LoadGameScene", 0.5f);
+    }
+
+    void LoadGameScene()
     {
         SceneManager.LoadScene("Game");
     }
